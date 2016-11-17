@@ -1,0 +1,3 @@
+{"ok":true,"result":[{"update_id":686083665,
+"message":{"message_id":14,"from":{"id":280657512,"first_name":"Emmanuel","last_name":"Appiah"},"chat":{"id":280657512,"first_name":"Emmanuel","last_name":"Appiah","type":"private"},"date":1479354339,"text":"Hello"}},{"update_id":686083666,
+"message":{"message_id":15,"from":{"id":280657512,"first_name":"Emmanuel","last_name":"Appiah"},"chat":{"id":280657512,"first_name":"Emmanuel","last_name":"Appiah","type":"private"},"date":1479354349,"text":"How far"}}]}
