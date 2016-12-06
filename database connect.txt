@@ -1,0 +1,16 @@
+<?php
+ 
+ $dbhost = "localhost";
+ $dbuser = "root";
+ $dbpass = "";
+ $db = "farms";
+ 
+ //Create Connection
+ 
+ $conn = new mysqli($dbhost, $dbuser, $dbpass,$db);
+ 
+ if ($conn->connect_error){
+	 die("Connect failed: ". $conn ->connect_error);
+ }
+ echo"Connection Successfully";
+?>
