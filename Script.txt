@@ -1,0 +1,17 @@
+<?php
+	$botToken="261124504:AAGrB9eq84cA57Mr9hytoDzr1NcY2qcoIDk";
+	
+	$website="https://api.telegram.org/bot".$botToken;
+	
+	$getUpdates="/getupdates";
+	
+	$update=file_get_contents($website.$getUpdates);
+	
+	$updateArray=json_decode($update, TRUE);
+	
+	$chatId = $updateArray ["result"]["0"]["message"]["chat"]["id"];
+	print_r($chatId);
+	
+	file_get_contents($website."/sendmessage?chat_id=".$chatId."&text=test");
+	
+?>	
