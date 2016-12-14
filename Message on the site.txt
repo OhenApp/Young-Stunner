@@ -1,0 +1,26 @@
+<?php 
+
+for ($x = 0; $x < $length; $x++) {
+    $text0=$update["result"][$x]["message"]["text"];
+    $t=date("h:i:sa");
+    //$chat_date=date("Y-m-d",$t);
+    echo '<li class="media">
+
+                                        <div class="media-body">
+
+                                            <div class="media">
+                                                <a class="pull-left" href="#">
+                                                    <img class="media-object img-circle " src="assets/img/user.png" width=20 height=20>
+                                                </a>
+                                                <div class="media-body">
+                                                    '.$text0.'
+                                                    <br>
+                                                   <small class="text-muted">Appiah | 23rd June at 5:00pm</small>
+                                                    <hr>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </li>';
+} 
+?>
