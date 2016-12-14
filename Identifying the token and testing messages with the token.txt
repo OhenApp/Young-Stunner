@@ -1,0 +1,14 @@
+$page = $_SERVER['http://localhost/Telegram-chat-API/BotChat.php'];
+$sec = "300";
+
+ //The bot token into the variable $botToken
+$botToken = "261124504:AAGrB9eq84cA57Mr9hytoDzr1NcY2qcoIDk";
+$website = "https://api.telegram.org/bot".$botToken;
+
+$update = file_get_contents($website."/getupdates");
+$update = json_decode($update, TRUE);
+
+$current_update=end($update["result"]);
+
+$chatId = $current_update["message"]["chat"]["id"];
+$message = $current_update ["message"]["text"];
