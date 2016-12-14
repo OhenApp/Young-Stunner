@@ -1,0 +1,24 @@
+$results = $mysqli->query("SELECT * FROM pest WHERE id='6'");
+
+while($row = $results->fetch_assoc()) {
+	            echo $message;
+              
+              $pestname= $row['Name'];
+              $pestdescription= $row['Description:'];
+              $pestlife= $row['History'];
+	      $pestdamage= $row['Damage'];
+	      $peststrategy= $row['ManagementStrategies'];
+			  
+			
+	    file_get_contents($website."/sendmessage?chat_id=".$chatId."&text="."Pest Name: ".$pestname);
+            file_get_contents($website."/sendmessage?chat_id=".$chatId."&text="."Description: ".$pestdescription);
+            file_get_contents($website."/sendmessage?chat_id=".$chatId."&text="."History: ".$pestlife);
+	    file_get_contents($website."/sendmessage?chat_id=".$chatId."&text="."Damage: ".$pestdamage);
+	    file_get_contents($website."/sendmessage?chat_id=".$chatId."&text="."ManagementStrategies: ".$peststrategy);
+			
+}  
+
+// close connection
+$mysqli->close();  
+			
+			break;	
