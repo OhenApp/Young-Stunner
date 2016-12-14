@@ -1,0 +1,6 @@
+date_default_timezone_set("Africa/Accra");
+
+for ($x = 0; $x < $length; $x++) {
+    $text0=$update["result"][$x]["message"]["text"];
+    
+	$t=date("d M Y H:s",($update["result"][$x]["message"]["date"]));
