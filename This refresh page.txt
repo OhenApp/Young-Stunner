@@ -1,0 +1,13 @@
+<?php
+$page = $_SERVER['http://localhost/Telegram-chat-API/BotChat.php'];
+$sec = "30";
+
+?>
+<script type="text/javascript">
+var auto_refresh = setInterval(
+function ()
+{
+$('#load_tweets').load('record_count.php').fadeIn("slow");
+}, 10000); // refresh every 10000 milliseconds
+
+</script>
